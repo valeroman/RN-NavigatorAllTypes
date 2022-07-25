@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import { styles, colores } from '../themes/appTheme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { TouchableIcon } from '../components/TouchableIcon';
 
 
 export const Tab1Screen = () => {
@@ -23,11 +24,11 @@ export const Tab1Screen = () => {
     >
         <Text style={ styles.title }>Iconos</Text>
         <Text>
-          <Icon name='add-outline' size={80} color={ colores.primary } />
-          <Icon name='airplane-outline' size={80} color={ colores.primary } />
-          <Icon name='add-outline' size={80} color={ colores.primary } />
-          <Icon name='bicycle-outline' size={80} color={ colores.primary } />
-          <Icon name='add-outline' size={80} color={ colores.primary } />
+          <TouchableIcon iconName='add-outline' />
+          <TouchableIcon iconName='airplane-outline' />
+          <TouchableIcon iconName='barbell-outline' />
+          <TouchableIcon iconName='bicycle-outline' />
+          <TouchableIcon iconName='baseball-outline' />
         </Text>
         
     </View>
